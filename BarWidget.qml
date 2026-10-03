@@ -15,11 +15,6 @@ BarWidget {
     else Quickshell.execDetached(["bash", root.script])
   }
 
-  function showCurrentTheme() {
-    if (root.bar) root.bar.run("omarchy-theme-current")
-    else Quickshell.execDetached(["omarchy-theme-current"])
-  }
-
   Process {
     id: themeProc
     command: ["omarchy", "theme", "current"]
@@ -42,8 +37,7 @@ BarWidget {
     tooltipText: "Active theme: " + (root.currentTheme !== "" ? root.currentTheme : "…") + "\nClick for a random theme"
     onTooltipHoveredChanged: if (tooltipHovered) themeProc.running = true
     onPressed: function(pressedButton) {
-      if (pressedButton === Qt.RightButton) root.showCurrentTheme()
-      else root.randomTheme()
+      root.randomTheme()
     }
   }
 }

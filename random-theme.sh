@@ -8,7 +8,7 @@ current="$(omarchy theme current 2>/dev/null)"
 mapfile -t themes < <(omarchy theme list 2>/dev/null)
 
 if [ "${#themes[@]}" -eq 0 ]; then
-  notify-send "Random Theme" "No themes found"
+  omarchy-notification-send "Random Theme" "No themes found"
   exit 1
 fi
 
