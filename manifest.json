@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.claudiuIosif.random-theme",
+  "name": "Random Theme",
+  "version": "1.0.0",
+  "author": "claudiuIosif",
+  "license": "MIT",
+  "description": "Bar button that applies a random Omarchy theme",
+  "homepage": "https://github.com/claudiuIosif/omarchy-random-theme",
+  "repository": "https://github.com/claudiuIosif/omarchy-random-theme",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Random Theme",
+    "description": "Click to apply a random Omarchy theme. Right click shows the current theme.",
+    "category": "Theme",
+    "allowMultiple": false
+  }
+}
