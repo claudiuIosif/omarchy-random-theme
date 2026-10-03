@@ -5,7 +5,7 @@ import qs.Ui
 
 BarWidget {
   id: root
-  moduleName: "io.github.claudiuIosif.random-theme"
+  moduleName: "io.github.claudiuiosif.random-theme"
 
   readonly property string script: Qt.resolvedUrl("random-theme.sh").toString().replace(/^file:\/\//, "")
   property string currentTheme: ""
