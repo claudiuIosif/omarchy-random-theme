@@ -1,5 +1,7 @@
 # Random Theme
 
+![preview](preview.png)
+
 Bar widget for [Omarchy](https://omarchy.org) that applies a random theme on every click.
 
 - **Left click**: apply a random theme (never repeats the active one)
